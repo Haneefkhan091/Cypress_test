@@ -32,7 +32,7 @@ jobs:
           ea_api
           ea_webapp
     - name: Cypress run
-      working-directory: ./cypressDemo
+      working-directory: ./Cypress_test
       run: |
         npm install
         npm run test

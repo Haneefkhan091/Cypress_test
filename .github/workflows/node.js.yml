@@ -33,7 +33,7 @@ jobs:
     - name: List contents of Cypress_test
       run: ls -la Cypress_test
     - name: Install dependencies and run Cypress tests
-      working-directory: ./Cypress_test
+      working-directory: ./Cypress_test/Cypress_test
       run: |
         npm install
         npm run test

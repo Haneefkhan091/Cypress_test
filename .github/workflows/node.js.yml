@@ -26,10 +26,12 @@ jobs:
         services: |
           ea_api
           ea_webapp
-    - name: List directory contents
-      run: ls -la ./Cypress_test
+    - name: List top-level directory contents
+      run: ls -la
     - name: Print working directory
       run: pwd
+    - name: List Cypress_test directory contents
+      run: ls -la ./Cypress_test
     - name: Install dependencies and run Cypress tests
       working-directory: ./Cypress_test
       run: |
